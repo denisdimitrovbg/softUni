@@ -1,0 +1,18 @@
+CREATE TABLE people(
+id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+name VARCHAR(200) NOT NULL,
+picture TINYBLOB,
+height DOUBLE(3,2),
+weight DOUBLE(3,2) ,
+gender ENUM('m', 'f') NOT NULL,
+birthdate DATE NOT NULL,
+biography TEXT
+);
+
+INSERT INTO	people
+VALUES
+(1,'Denis', NULL,1.33, 2.22,'m','1998-01-01','asddfdfsdfsfds'),
+(2,'Denis', NULL,1.33, 2.22,'m','1998-01-01','asddfdfsdfsfds'),
+(3,'Denis', NULL,1.33, 2.22,'m','1998-01-01','asddfdfsdfsfds'),
+(4,'Denis', NULL,1.33, 2.22,'m','1998-01-01','asddfdfsdfsfds'),
+(5,'Denis', NULL,1.33, 2.22,'m','1998-01-01','asddfdfsdfsfds');

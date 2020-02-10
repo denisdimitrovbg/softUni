@@ -1,0 +1,2 @@
+SELECT CONCAT(first_name," ",middle_name," ",last_name) FROM employees AS full_name
+WHERE salary = 25000 OR salary = 30000 OR salary = 14000  OR salary = 12500 OR salary = 23600;
