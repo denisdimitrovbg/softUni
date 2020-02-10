@@ -1,0 +1,7 @@
+SELECT e.employee_id, e.first_name, e.salary, a.`name`
+ FROM employees AS e
+INNER JOIN departments AS a
+ ON e.department_id = a.department_id
+ WHERE salary > 15000
+ ORDER BY a.department_id desc
+ LIMIT 5;

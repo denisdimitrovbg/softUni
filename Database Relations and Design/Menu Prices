@@ -1,0 +1,6 @@
+SELECT category_id,
+ ROUND(AVG(price),2) AS average_price,
+  ROUND(MIN(price),2) AS cheapest_product,
+   ROUND(MAX(price),2) AS most_expensive_product
+ FROM products
+GROUP BY category_id;
